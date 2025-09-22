@@ -2,6 +2,7 @@ from random import randint
 counter = 0
 
 generate_number = randint(1, 100)
+print(generate_number)
 while True:
     while True:
         player_number = input("Guess the number from 1 to 100: ")
@@ -17,7 +18,7 @@ while True:
     counter += 1
     if int(player_number) < generate_number:
         print("Too Low!")
-    elif int(player_number) < generate_number:
+    elif int(player_number) > generate_number:
         print("Too High!")
     else:
         if counter == 1:
